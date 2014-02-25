@@ -12,11 +12,11 @@ We have 2 apps here:
 
 3. Update `server.js` on line 16:
 
-```js
-var appNameToMilestoneNumber = {
-  <main_app> : <milestone_id>
-}
-```
+  ```js
+  var appNameToMilestoneNumber = {
+    <main_app> : <milestone_id>
+  }
+  ```
 
 4. Commit changes: `git commit -am 'Updated milestone numbers'`
 
