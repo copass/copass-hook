@@ -8,7 +8,7 @@ We have 2 apps here:
 
 1. Clone `hook_app`
 
-2. Create a milestone in github's `main_app`. Retrieve its number by filtering over the milestone and looking at the url : https://github.com/copass/copass/issues?milestone=<milestone_id>
+2. Create a milestone in github's `main_app`. Retrieve its number by filtering over the milestone and looking at the url : https://github.com/:owner/:repository/issues?milestone=<milestone_id>
 
 3. Update `server.js` on line 16:
 
