@@ -47,13 +47,11 @@ var addLabel = function(app_name, issueNumber) {
 }
 
 app.get('/', function(req, res) {
-	console.log(req)
 	res.send("<h1>Welcome to the Copass Hooks Apps</h1>");
-	res.send("<p>POST / [log]={{log}} will hook github repository to add labels</p>");
+	res.send("<p>POST / with params app_name & git_log from heroku webhook will hook github repository to add labels</p>");
 });
 
 app.post('/', function(req, res) {
-	console.log(req.body);
 	app_name = req.body.app;
 	matches = req.body.git_log.match(/(fixes?|closes?) #\d+/g);
 	for (var i = 0; i < matches.length; i++) {
